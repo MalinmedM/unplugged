@@ -1,0 +1,34 @@
+header
+  - logo
+  - Navigation bar
+    - About
+    - faq
+  - Hero image
+  - Headline
+
+Content area
+  - Newsletter signup
+    - Headline text
+    - paragraph
+    - headline text
+    - Email signup
+    - Submit button
+  - Info About Unplugged
+    - Headline text
+    - Background image
+    - Icons
+    - text
+  - Previous Retreat
+    - Headline text
+    - image
+    - Headline text
+    - paragraph
+
+- footer
+  - Contact
+    - Headline text
+    - Contact Info
+  - Social Media
+    - Headline text
+    - Social Icons
+  - Copyright
