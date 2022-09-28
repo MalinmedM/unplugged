@@ -1,6 +1,5 @@
-/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
 
-/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
@@ -84,10 +83,21 @@ textarea {
 }
 
 /* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
-/* --------------- Base Header - Footer Styles -------------*/
+/* -------------------- Base Header - Footer Styles -------------------- */
 
 header,
 footer {
@@ -97,21 +107,11 @@ footer {
   flex-flow: row wrap;
 }
 
-/* Header Styles */
-
 header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-}
-
-header figure {
-
-}
-
-.header-divider {
-
 }
 
 header nav {
@@ -121,36 +121,35 @@ header nav {
   flex-flow: row wrap;
 }
 
-nav ul {
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-nav ul li {
 
-}
+/* -------------------- Mobile Styles - Homepage -------------------- */
 
-nav ul li a {
-
-}
-
-
-
-/* --------------- Mobile Styles - Homepage -------------*/
+/* Hero Area */
 
 .hero-area {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
 }
 
-main .content-wrapper {
-
-}
-
-/* Form-area */
+/* Aside */
 
 aside {
   display: flex;
@@ -159,29 +158,12 @@ aside {
   flex-flow: row wrap;
 }
 
-aside .content-wrapper {
-
-}
-
-.form-description {
-
-}
-
-.form {
-
-}
-
-/* Features-area */
+/* Features */
 
 .features {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
-}
-
-.features .content-wrapper {
-
 }
 
 .features .features-items {
@@ -191,30 +173,17 @@ aside .content-wrapper {
   flex-flow: row wrap;
 }
 
-.fontawesome-icon {
-
-}
-
-.features-item-description {
-
-}
-
-/* Reviews area*/
+/* Reviews */
 
 .reviews {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
 }
 
-.reviews .content-wrapper {
-
-}
-
-.review-description {
-
-}
+/* ==========================================================================
+   About Page
+   ========================================================================== */
 
 .mission {
   display: flex;
@@ -229,40 +198,24 @@ aside .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
 }
-/* Footer */
 
-footer {
+/* ==========================================================================
+   FAQ Page
+   ========================================================================== */
 
-}
-
-footer .content-wrapper {
-
-}
-
-.footer-content {
-
-}
-
-.contact {
-
-}
-
-footer .social p {
+.faq {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
 }
 
-footer .social-icons {
+.faq .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
 }
-
-.copyright {
-
-}
-
 
 /* ==========================================================================
    Helper classes
@@ -272,8 +225,7 @@ footer .social-icons {
  * Hide visually and from screen readers
  */
 
-.hidden,
-[hidden] {
+.hidden {
   display: none !important;
 }
 
@@ -286,34 +238,34 @@ footer .social-icons {
  *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
  */
 
-.sr-only {
+.visuallyhidden {
   border: 0;
-  clip: rect(0, 0, 0, 0);
+  clip: rect(0 0 0 0);
   height: 1px;
   margin: -1px;
   overflow: hidden;
   padding: 0;
   position: absolute;
-  white-space: nowrap;
   width: 1px;
+  white-space: nowrap;
   /* 1 */
 }
 
 /*
- * Extends the .sr-only class to allow the element
+ * Extends the .visuallyhidden class to allow the element
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
 
-.sr-only.focusable:active,
-.sr-only.focusable:focus {
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
   clip: auto;
   height: auto;
   margin: 0;
   overflow: visible;
   position: static;
-  white-space: inherit;
   width: auto;
+  white-space: inherit;
 }
 
 /*
@@ -336,13 +288,15 @@ footer .social-icons {
  *    `:before` to contain the top-margins of child elements.
  */
 
-.clearfix::before,
-.clearfix::after {
+.clearfix:before,
+.clearfix:after {
   content: " ";
+  /* 1 */
   display: table;
+  /* 2 */
 }
 
-.clearfix::after {
+.clearfix:after {
   clear: both;
 }
 
@@ -357,9 +311,9 @@ footer .social-icons {
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -371,67 +325,58 @@ footer .social-icons {
 
 @media print {
   *,
-  *::before,
-  *::after {
-    background: #fff !important;
+  *:before,
+  *:after {
+    background: transparent !important;
     color: #000 !important;
     /* Black prints faster */
+    -webkit-box-shadow: none !important;
     box-shadow: none !important;
     text-shadow: none !important;
   }
-
   a,
   a:visited {
     text-decoration: underline;
   }
-
-  a[href]::after {
+  a[href]:after {
     content: " (" attr(href) ")";
   }
-
-  abbr[title]::after {
+  abbr[title]:after {
     content: " (" attr(title) ")";
   }
-
   /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
     content: "";
   }
-
   pre {
     white-space: pre-wrap !important;
   }
-
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
-
   /*
-   * Printing Tables:
-   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-   */
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
   thead {
     display: table-header-group;
   }
-
   tr,
   img {
     page-break-inside: avoid;
   }
-
   p,
   h2,
   h3 {
     orphans: 3;
     widows: 3;
   }
-
   h2,
   h3 {
     page-break-after: avoid;
