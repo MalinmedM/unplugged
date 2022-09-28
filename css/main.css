@@ -99,11 +99,17 @@ footer {
 
 /* Header Styles */
 
+header {
+  padding: 15px 0;
+}
+
 header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 90%;
+  margin: 0;
 }
 
 header figure {
@@ -111,7 +117,7 @@ header figure {
 }
 
 .header-divider {
-
+  width: 100%;
 }
 
 header nav {
@@ -119,6 +125,7 @@ header nav {
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  width: 60%;
 }
 
 nav ul {
@@ -146,8 +153,10 @@ nav ul li a {
   flex-flow: row wrap;
 }
 
-main .content-wrapper {
-
+.content-wrapper {
+  width: 90%;
+  max-width: 320px;
+  margin: auto;
 }
 
 /* Form-area */
@@ -189,6 +198,10 @@ aside .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.features p {
+  margin: 0;
 }
 
 .fontawesome-icon {
@@ -236,7 +249,8 @@ footer {
 }
 
 footer .content-wrapper {
-
+  width: 55%;
+  margin: 50px 0;
 }
 
 .footer-content {
@@ -245,6 +259,10 @@ footer .content-wrapper {
 
 .contact {
 
+}
+
+footer p {
+  margin: 0;
 }
 
 footer .social p {
