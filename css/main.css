@@ -95,6 +95,11 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 100%;
+}
+
+header {
+  padding: 15px 0;
 }
 
 header .content-wrapper {
@@ -102,6 +107,8 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 90%;
+  margin: 0;
 }
 
 header nav {
@@ -109,11 +116,18 @@ header nav {
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  width: 60%;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
+  width: 100%;
+}
+
+footer .content-wrapper{
+  width: 55%;
+  padding: 50px 0 7px 0;
 }
 
 footer .social-icons {
@@ -128,6 +142,10 @@ footer .social p {
   align-items: center;
 }
 
+footer p {
+  margin: 0;
+}
+
 /* ------------------------- Mobile Styles - homepage ----------------------- */
 /* Hero area */
 
@@ -135,6 +153,7 @@ hero-area {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 50px 0;
 }
 
 aside {
@@ -148,6 +167,11 @@ aside {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 50px 0;
+}
+
+.features article {
+  width: 55%;
 }
 
 .features .features-items {
@@ -157,6 +181,10 @@ aside {
   flex-flow: row wrap;
 }
 
+.features p {
+  margin: 0;
+}
+
 /* Reviews */
 
 .reviews {
@@ -164,6 +192,11 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 50px 0;
+}
+
+.reviews h3 {
+  width: 100%;
 }
 
 /* About page */
@@ -173,6 +206,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 50px 0;
 }
 
 .contact-section {
@@ -189,6 +223,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 50px 0;
 }
 
 .faq .content-wrapper {
