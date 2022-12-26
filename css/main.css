@@ -358,7 +358,7 @@ aside {
 .features article {
   width: 50%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-flow: row wrap;
   flex-basis: ???;
 }
@@ -390,11 +390,8 @@ footer-content {
 }
 
 @media only screen and (min-width: 1200px) {
-  .features-items {
+  .features-article {
     width: 33%;
-    display: flex;
-    justify-content: space-between;
-    flex-flow: row wrap;
     flex-basis: ???;
   }
 }
