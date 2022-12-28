@@ -345,15 +345,36 @@ aside {
     justify-content: center;
   }
 
+  header nav {
+    width:
+  }
+
   header nav ul {
     justify-content: space-between;
   }
+
+  .header-divider {
+    display: none;
+  }
+
+  /* Hero Area */
+
+  /* Aside */
 
   aside .content-wrapper {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+    margin: 50px 0;
   }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width:
+    margin: 0;
+  }
+
+  /* Features */
 
 .features article {
   width: 50%;
@@ -363,19 +384,37 @@ aside {
   flex-basis: 320px;
 }
 
-.features-item-description {
+.feaatures .features-item-description {
   text-align: center;
+  width:
 }
+
+/* Reviews */
 
 .reviews article {
   display: flex;
   justify-content: right;
 }
 
+.reviews article div {
+  width:
+}
+
+/* Footer */
+
+footer .content-wrapper {
+  width:
+  margin: 100px 0;
+}
+
 footer-content {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer .contact {
+  margin-bottom: 0;
 }
 
   .contact .social {
@@ -418,6 +457,8 @@ footer-content {
     width: 100%;
   }
 }
+
+/********************** Desktop *********************/
 
 @media only screen and (min-width: 1200px) {
 
