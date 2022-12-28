@@ -358,9 +358,9 @@ aside {
 .features article {
   width: 50%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-flow: row wrap;
-  flex-basis: ???;
+  flex-basis: 320px;
 }
 
 .features-item-description {
@@ -382,19 +382,62 @@ footer-content {
     width: 50%;
   }
 
+  /****** ABOOUT page ******/
+
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mission-content p {
+    width: 320px;
+  }
+
+  .contact-section .content-wrapper h2 {
+    width: 160px;
+  }
+
+  .contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   /******FAQ page ******/
   
+  .faq .content-wrapper {
+    justify-content: space-between;
+  }
+
   .faq-content {
-    flex-basis: ???;
+    flex-basis: 40%;
+  }
+
+  .faq h2 {
+    width: 100%;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .features-article {
-    width: 33%;
-    flex-basis: ???;
+
+  .content-wrapper {
+    max-width: 960px;
   }
+
+  .features article {
+    width: 33%;
+    flex-basis: 200px;
+  }
+
+  /******FAQ page ******/
+
+  .faq-content {
+    flex-basis: 480px;
+  }
+
 }
+
 
 /* ==========================================================================
    Print styles.
