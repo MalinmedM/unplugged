@@ -427,14 +427,15 @@ footer .copyright {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 20px;
   }
 
   .mission-content p {
-    width: 320px;
+    width: 45%;
   }
 
   .contact-section .content-wrapper h2 {
-    width: 160px;
+    width: 80%;
   }
 
   .contact-content {
