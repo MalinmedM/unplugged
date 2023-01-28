@@ -106,7 +106,6 @@ ol {
 a {
   color: #e2e3ed;
   text-decoration: none;
-  font-style: normal;
 }
 
 h2 {
@@ -133,7 +132,7 @@ figure {
 }
 
 address {
-
+  font-style: normal;
 }
 
 .content-wrapper {
