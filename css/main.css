@@ -491,8 +491,7 @@ footer .copyright {
   }
 
   .features article {
-    width: 33%;
-    flex-basis: 200px;
+    flex-basis: 33%;
   }
 
 /* Reviews */
@@ -512,7 +511,7 @@ footer .copyright {
   /******FAQ page ******/
 
   .faq-content {
-    flex-basis: 480px;
+    flex-basis: 45%;
   }
 
   .faq h2 {
