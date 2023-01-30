@@ -108,6 +108,10 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  line-height: 1.194;
+}
+
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
@@ -121,7 +125,7 @@ h4 {
 
 p {
   font-size: 0.875em;
-  line-height: 1.125;
+  line-height: 1.285;
 }
 
 img {
@@ -381,6 +385,23 @@ aside {
 
 @media only screen and (min-width: 768px) {
   
+
+  h1 {
+    line-height: 1;
+  }
+
+  h2 {
+    line-height: 1.333;
+  }
+
+  h3 {
+    line-height: 1.25;
+  }
+
+  p {
+    line-height: 3.141;
+  }
+
   .content-wrapper {
     max-width: 640px;
     margin: 100px 0;
@@ -506,6 +527,11 @@ footer .copyright {
   .faq h2 {
     width: 100%;
   }
+
+  .faq h4,
+  .faq p {
+    line-height: 1.125;
+  }
 }
 
 /********************** Desktop *********************/
@@ -567,6 +593,10 @@ footer .copyright {
     width: 100%;
   }
 
+  .faq h4,
+  .faq p {
+    line-height: 1;
+  }
 }
 
 
