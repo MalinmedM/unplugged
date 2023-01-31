@@ -96,6 +96,7 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
+  color: #e2e3ed;
 }
 
 ul,
@@ -108,16 +109,23 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-weight: 500;
+  font-size: 2.25em;
+  line-height: 1.194;
+}
 
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
+  font-weight: 500;
 }
 
 h3,
 h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
+  font-weight: 500;
 }
 
 p {
@@ -151,6 +159,7 @@ footer {
   align-items: center;
   flex-flow: row wrap;
   width: 100%;
+  background-color: #202322;
 }
 
 header {
@@ -172,6 +181,9 @@ header nav {
   align-items: center;
   flex-flow: row wrap;
   width: 60%;
+  font-size: 1.125em;
+  font-weight: bold;
+  text-transform: capitalize;
 }
 
 header nav ul {
@@ -189,6 +201,8 @@ footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  color: #527158;
+  size: 21px;
 }
 
 footer .social p {
@@ -213,6 +227,7 @@ footer p {
   justify-content: center;
   align-items: center;
   padding: 50px 0;
+  background-image: url("..img/jake-melara-30679-unsplash.jpg");
 }
 
 aside {
@@ -220,6 +235,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
 aside .form {
@@ -259,6 +275,10 @@ input[type=button] {
   margin: 30px 0;
 }
 
+.features fontawsome-icons {
+  size: 60px;
+}
+
 .features .features-items {
   display: flex;
   justify-content: center;
@@ -278,6 +298,7 @@ input[type=button] {
   align-items: center;
   flex-flow: row wrap;
   padding: 50px 0;
+  background-color: #2a423a;
 }
 
 .reviews h3 {
@@ -292,6 +313,7 @@ input[type=button] {
   align-items: center;
   flex-flow: row wrap;
   padding: 50px 0;
+  background-color: #527158;
 }
 
 .contact-section {
@@ -299,6 +321,7 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
 }
 
 /* FAQ page */
@@ -309,6 +332,7 @@ input[type=button] {
   align-items: center;
   flex-flow: row wrap;
   padding: 50px 0;
+  background-color: #527158;
 }
 
 .faq .content-wrapper {
@@ -411,18 +435,22 @@ input[type=button] {
 
   h1 {
     line-height: 1;
+    font-size: 3em;
   }
 
   h2 {
     line-height: 1.333;
+    font-size: 2.25em;
   }
 
   h3 {
     line-height: 1.25;
+    font-size: 1.5em;
   }
 
   p {
     line-height: 1.333;
+    font-size: 1.125em;
   }
 
   .content-wrapper {
@@ -510,6 +538,10 @@ footer .contact {
   margin-bottom: 0;
 }
 
+footer p {
+  line-height: 1.125;
+}
+
 footer .copyright {
   width: 100%;
 }
@@ -554,12 +586,16 @@ footer .copyright {
   .faq h4,
   .faq p {
     line-height: 1.125;
+    font-size: 0.875em;
   }
 }
 
 /********************** Desktop *********************/
 
 @media only screen and (min-width: 1200px) {
+  h1 {
+    font-size: 3.75em;
+  }
 
   .content-wrapper {
     max-width: 960px;
@@ -603,6 +639,7 @@ footer .copyright {
   .mission h2,
   .contact-section .content-wrapper h2 {
     width: 73%;
+    font-size: 3em;
   }
   
 
@@ -614,11 +651,13 @@ footer .copyright {
 
   .faq h2 {
     width: 100%;
+    font-size: 3em;
   }
 
   .faq h4,
   .faq p {
     line-height: 1;
+    font-size: 1.125em;
   }
 }
 
