@@ -138,7 +138,7 @@ img {
 }
 
 figure {
-
+  margin: 0;
 }
 
 address {
@@ -190,6 +190,14 @@ header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
+}
+
+header figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 60%;
 }
 
 footer .content-wrapper{
@@ -273,6 +281,11 @@ input[type=button] {
   display: flex;
   justify-content: center;
   padding: 50px 0;
+  background: url("../img/bg-features.jpg") #333;
+  background-image: url("../img/bg-features.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .features article {
