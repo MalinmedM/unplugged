@@ -321,6 +321,7 @@ input[type=button] {
 
 .reviews h3 {
   width: 100%;
+  margin: 0;
 }
 
 /* About page */
@@ -482,7 +483,7 @@ input[type=button] {
 
   header .content-wrapper {
     width: 100%;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   header nav {
@@ -491,6 +492,14 @@ input[type=button] {
 
   header nav ul {
     justify-content: space-between;
+  }
+
+  header figure {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 30%;
   }
 
   .header-divider {
@@ -535,7 +544,7 @@ input[type=button] {
   justify-content: space-between;
 }
 
-.reviews article div {
+.reviews article div, .reviews article figure {
   width: 49%;
 }
 
