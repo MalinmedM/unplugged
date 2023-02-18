@@ -339,7 +339,7 @@ input[type=button] {
   position: relative;
   width: 100%
   height: 0;
-  padding-bottom: 75%;
+  padding-bottom: 125%;
   overflow: hidden;
 }
 
@@ -602,6 +602,10 @@ footer .copyright {
     width: 45%;
   }
 
+  .map figure {
+    padding-bottom: 55%;
+  }
+
   .contact-section .content-wrapper h2 {
     width: 80%;
   }
@@ -685,6 +689,9 @@ footer .copyright {
     font-size: 3em;
   }
   
+  .map figure {
+    padding-bottom: 37.5%;
+  }
 
   /******FAQ page ******/
 
