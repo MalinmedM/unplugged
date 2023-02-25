@@ -297,6 +297,11 @@ input[type=button] {
   size: 60px;
 }
 
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
+}
+
 .features .features-items {
   display: flex;
   justify-content: center;
