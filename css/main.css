@@ -200,6 +200,10 @@ header figure {
   width: 60%;
 }
 
+footer {
+  text-align: center;
+}
+
 footer .content-wrapper{
   width: 55%;
   margin: 50px 0;
@@ -207,10 +211,13 @@ footer .content-wrapper{
 
 footer .social-icons {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   color: #527158;
-  size: 21px;
+}
+
+footer .social-icons i {
+  font-size: 3em;
 }
 
 footer .social p {
@@ -471,7 +478,6 @@ input[type=button] {
    ========================================================================== */
 
 @media only screen and (min-width: 768px) {
-  
 
   h1 {
     line-height: 1;
@@ -490,7 +496,6 @@ input[type=button] {
 
   p {
     line-height: 1.333;
-    font-size: 1.125em;
   }
 
   .content-wrapper {
@@ -579,7 +584,7 @@ footer .content-wrapper {
 .footer-content {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 
 footer .contact {
@@ -588,10 +593,17 @@ footer .contact {
 
 footer p {
   line-height: 1.125;
+  width: 100%;
+  clear: both;
 }
 
 footer .copyright {
   width: 100%;
+}
+
+footer h4 {
+  font-size: 1.5em;
+  margin-bottom: 40px;
 }
 
   /****** ABOOUT page ******/
@@ -651,6 +663,10 @@ footer .copyright {
 
   .content-wrapper {
     max-width: 960px;
+  }
+
+  footer h4 {
+    font-size: 1.875em;
   }
 
 /* Hero area */
