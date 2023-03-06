@@ -235,8 +235,8 @@ footer p {
 }
 
 footer .copyright {
-  clear: both;
   margin: 20px 0;
+  width: 100%;
 }
 
 /* ------------------------- Mobile Styles - homepage ----------------------- */
