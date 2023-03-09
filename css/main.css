@@ -549,7 +549,7 @@ input[type=button] {
   /* Hero Area */
 
   .hero-area {
-    min-height: 600px;
+    min-height: 500px;
   }
 
   .hero-area h1 {
