@@ -332,6 +332,7 @@ input[type=button] {
 
 .features p {
   margin: 0;
+  text-align: center;
 }
 
 /* Reviews */
